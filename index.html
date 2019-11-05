@@ -61,7 +61,7 @@
 			  var elms = document.getElementsByClassName("iconb");
 
 			for(var i = 0; i < elms.length; i++) {
-			  if (cSP - 1200 > elms[i].offsetTop) {
+			  if (cSP - 1100 > elms[i].offsetTop) {
 				elms[i].style.opacity = "1";
 			  } else {
 				elms[i].style.opacity = "0";
@@ -222,6 +222,48 @@
 			  margin: 0;
 			
 			}
+			
+			.descContainer {
+				margin: auto;
+				max-height: 50%;
+				padding-bottom: 5%;
+			}
+			
+			.iconContainer {
+				margin: auto;
+				padding-top: 10%;
+			}
+			
+			.featureContainer {
+				margin: auto;
+				max-height: 15%;
+				padding: 5%;
+			}
+			
+			.iconsContainer {
+				margin: auto;
+				max-height: 60%;
+				max-width: 75%;
+				padding: 5%;
+			}
+			
+			.classesContainer {
+				margin: auto;
+				padding: 5%;
+			}
+			
+			.classesRContainer {
+				margin: left;
+				padding: 5%;
+				padding-left: 15%;
+				max-width: 20%;
+				float: left;
+			}
+			
+			.classesInfoContainer {
+				margin: auto;
+				padding: 15%;
+			}
 
 			.content, .overlay {
 			  grid-area: 1 / 1;
@@ -339,13 +381,7 @@
 	<body>
 		<div class="container">
 			<div class="overlay">
-			<br>
-			<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<div class="iconContainer">
 				<img src="RiftIcon.png" id="riftimg" class="center" alt="Rift Server Icon" style="width:7%;height:auto;">
 				<br>
 				<h1>The Rift</h1>
@@ -353,58 +389,37 @@
 				<input type="text" value="therift.net" id="ip" class="hide">
 				<button onclick="ipCopy()" class="center">Copy IP</button>
 				<h3 id="copymsg" class="hide">Link Copied!</h3>
-				<br>
-				<br>
-				<br>
+				</div>
 			</div>
 		</div>
 		<svg width="110%" height="40px">
 		  <rect width="100%" height="100%" style="fill:rgb(149, 50, 168);stroke-width:0;stroke:rgb(0,0,0)" />
 		</svg>
-		<h4>About The Rift</h4>
-		<img src="mcvector.jpg" id="riftimg" class="center" alt="Minecraft Icon" style="width:8%;height:auto;">
-		<br>
-		<h2>We're a Minecraft Survival RPG Server currently in development.<br>Our mission is to create a complete and unique experience<br>that combines RPG elements from games like WoW<br>and implement it in an interactive and fun PVP experience!<br><br>Join our discord to follow our progress!</h2>
-		<br>
-		<a title="Official Discord!" href="http://discord.therift.net" class="linkcenter grow" target="_blank">
-			<img src="discord.png" alt="Discord Icon" class="center icon grow" style="width:70%;height:70%;">
-		</a>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		<div class="descContainer">
+			<h4>About The Rift</h4>
+			<img src="mcvector.jpg" id="riftimg" class="center" alt="Minecraft Icon" style="width:8%;height:auto;">
+			<br>
+			<h2>We're a Minecraft Survival RPG Server currently in development.<br>Our mission is to create a complete and unique experience<br>that combines RPG elements from games like WoW<br>and implement it in an interactive and fun PVP experience!<br><br>Join our discord to follow our progress!</h2>
+			<br>
+			<a title="Official Discord!" href="http://discord.therift.net" class="linkcenter grow" target="_blank">
+				<img src="discord.png" alt="Discord Icon" class="center icon grow" style="width:70%;height:70%;">
+			</a>
+		</div>
 		<div class="container">
 			<div class="overlay">
 			<svg width="110%" height="40px">
 		  <rect width="100%" height="100%" style="fill:rgb(149, 50, 168);stroke-width:0;stroke:rgb(0,0,0)" />
 		</svg>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<div class = "featureContainer">
 				<h1>Planned Features</h1>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				</div>
 			</div>
 		</div>
 		<svg width="110%" height="40px">
 		  <rect width="100%" height="100%" style="fill:rgb(149, 50, 168);stroke-width:0;stroke:rgb(0,0,0)" />
 		</svg>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		
+		<div class="iconsContainer">
 		<div class="right" id="iconbox">
 		<div class="iconb">
 			<img src="swordsh.png" alt="Sword Icon" id="classimg" class="icon center grow">
@@ -449,88 +464,22 @@
 			Grind levels and find epic loot!</p>
 			</div>
 		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		</div>
 		<div class = "classes" id="classes">
 		<div class="container">
 			<div class="overlay">
 			<svg width="110%" height="40px">
 		  <rect width="100%" height="100%" style="fill:rgb(149, 50, 168);stroke-width:0;stroke:rgb(0,0,0)" />
 		</svg>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				<div class = "classesContainer">
 				<h1>Classes</h1>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
-				<br>
+				</div>
 			</div>
 		</div>
 		<svg width="110%" height="40px">
 		  <rect width="100%" height="100%" style="fill:rgb(149, 50, 168);stroke-width:0;stroke:rgb(0,0,0)" />
 		</svg>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		<div class = "classesRContainer">
 		<div class="right" id="iconbox">
 			<div class="iconb">
 			<img src="fire.png" alt="Pyro Icon" class="icon center grow" id="pyroimg" onclick="pyro();">
@@ -553,13 +502,8 @@
 			</p>
 			</div>
 		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		</div>
+		<div class="classesInfoContainer">
 		<div class="pyroinfo" id="pyroinfo">
 			<img src="fire.png" alt="Pyro Abilities" class="icon center grow">
 			<h2>Pyromancer Skills</h2>
@@ -578,48 +522,7 @@
 			<p>Level 0: <br>Level 2: <br>Level 4: <br>Level 6: <br>Level 8: 
 			</p>
 		</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		</div>
 		</div>
 	</body>
 	<div class="containerBlack">
